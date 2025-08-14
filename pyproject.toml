@@ -1,0 +1,13 @@
+[project]
+name = "csv-wtf-tools"
+version = "0.1.0"
+description = "Small tools to help assess csv files"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["pandas>=2.3.1", "polars>=1.32.2", "rich>=14.1.0"]
+
+[dependency-groups]
+dev = ["pytest>=8.4.1", "ruff>=0.12.8"]
+
+[project.scripts]
+csv_wtf_basic = "csv_wtf_tools.basic:main"
